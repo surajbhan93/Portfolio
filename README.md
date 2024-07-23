@@ -14,7 +14,7 @@
 
 # Demo :movie_camera:
 
-![](./public/image/screen.png)
+
 
 ## View live preview [here]([https://portfolio-amber-alpha-72.vercel.app/]
 

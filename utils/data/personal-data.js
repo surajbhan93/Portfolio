@@ -1,4 +1,4 @@
-export const personalData = {
+export const personalData ={
   name: "Suraj Bhan",
   profile: '/suraj.jpeg',
   designation: "Software Developer",

@@ -68,6 +68,17 @@ function Education() {
                             {education.title}
                           </p>
                           <p className="text-sm sm:text-base">{education.institution}</p>
+                          {/* New fields */}
+                          {education.grade && (
+                            <p className="text-sm sm:text-base text-[#16f2b3] mt-2">
+                              Grade: {education.grade}
+                            </p>
+                          )}
+                          {education.description && (
+                            <p className="text-sm sm:text-base text-gray-400 mt-1">
+                              {education.description}
+                            </p>
+                          )}
                         </div>
                       </div>
                     </div>

@@ -1,5 +1,5 @@
 // @flow strict
-
+"use client";
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,8 +8,28 @@ import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
+import { useState, useEffect } from 'react'; // Add this import
 
 function HeroSection() {
+  
+//   const [scrollingDesignation, setScrollingDesignation] = useState("");
+// const designationText = personalData.designation;
+
+// useEffect(() => {
+//   let index = 0;
+//   const interval = setInterval(() => {
+//     setScrollingDesignation(designationText.substring(0, index));
+//     index += 1;
+    
+//     // Stop when the full text is shown
+//     if (index > designationText.length) {
+//       clearInterval(interval);
+//     }
+//   }, 200); // Adjust speed of scrolling text (200 ms in this case)
+
+//   return () => clearInterval(interval); // Clean up interval on unmount
+// }, []);
+
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
       <Image
@@ -26,7 +46,7 @@ function HeroSection() {
             Hello, <br />
             This is {' '}
             <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
+            {` , I'm a `}
             <span className=" text-[#16f2b3]">{personalData.designation}</span>
             .
           </h1>
